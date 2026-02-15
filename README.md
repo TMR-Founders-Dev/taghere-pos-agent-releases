@@ -19,6 +19,8 @@ TagHere POS Agent 자동 업데이트 배포용 저장소입니다.
 
 ```bash
 # 1) macOS에서 dotnet publish (taghere-pos-agent 프로젝트 루트에서)
+# self-contained를 설정해야 .NET 별도 설치 없이 실행 가능
+# 상황에 맞게 버전 수정해야함
 rm -rf publish/Agent-installer
 dotnet publish src/TagherePosAgent/TagherePosAgent.csproj \
   --configuration Release \
